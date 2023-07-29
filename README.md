@@ -38,3 +38,14 @@
     - sortMergeJoin 100K: 0.0920555591583252
 
     As we can see the sort merge algorithm works almost 2 times faster then the hash join algorithm in our implementations.
+
+
+## Improved Sort-Merge Join
+
+    this function uses almost the same code as sothMergeJoin function
+    difference is it uses ids instead of strings for the join columns
+    also experiments shown in place sort is faster than using sorted function in pyhton
+    so replaced sorted function with sort function
+    this function is faster than the other one
+
+    Got 19sec execution time comparing to the original sort merge which was 5 seconds faster.
